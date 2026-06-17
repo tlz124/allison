@@ -19,8 +19,21 @@
         <li><a href="#stories">Stories</a></li>
       </ul>
       <a href="#contact" class="nav__cta">Book a Call</a>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
+
+  <!-- MOBILE NAV DRAWER -->
+  <div class="nav__mobile" aria-hidden="true">
+    <button class="nav__mobile-close" aria-label="Close menu">&times;</button>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#approach">Approach</a>
+    <a href="#stories">Stories</a>
+    <a href="#contact" class="btn btn-terra">Book a Call</a>
+  </div>
 
   <!-- HERO -->
   <section class="hero">
@@ -43,7 +56,17 @@
       </div>
     </div>
 
+    <!-- Desktop portrait (absolute positioned) -->
     <div class="hero__portrait">
+      <img src="ivan-lapyrin-gT0Y5fZdXmE-unsplash.jpg" alt="Allison Johnson, Sober Coach">
+      <div class="hero__portrait-label">
+        <strong>Allison Johnson</strong>
+        <span>Recovery Coach · 10+ Years Sober</span>
+      </div>
+    </div>
+
+    <!-- Mobile portrait (inline, below hero text) -->
+    <div class="hero__portrait-mobile">
       <img src="ivan-lapyrin-gT0Y5fZdXmE-unsplash.jpg" alt="Allison Johnson, Sober Coach">
       <div class="hero__portrait-label">
         <strong>Allison Johnson</strong>

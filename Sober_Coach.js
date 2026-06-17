@@ -6,6 +6,39 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  /* ── Mobile hamburger menu ── */
+  const hamburger   = document.querySelector('.nav__hamburger');
+  const mobileMenu  = document.querySelector('.nav__mobile');
+  const closeBtn    = document.querySelector('.nav__mobile-close');
+  const mobileLinks = document.querySelectorAll('.nav__mobile a');
+
+  function openMenu() {
+    mobileMenu.classList.add('is-open');
+    mobileMenu.setAttribute('aria-hidden', 'false');
+    hamburger.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    mobileMenu.classList.remove('is-open');
+    mobileMenu.setAttribute('aria-hidden', 'true');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  hamburger?.addEventListener('click', openMenu);
+  closeBtn?.addEventListener('click', closeMenu);
+
+  // Close menu when any link is tapped
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
+  });
+
   /* ── Scroll reveal ── */
   const revealEls = document.querySelectorAll('[data-reveal]');
   const revealObserver = new IntersectionObserver((entries) => {
@@ -16,7 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+
   revealEls.forEach(el => revealObserver.observe(el));
 
   /* ── Counter animation ── */
@@ -39,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
       countObserver.unobserve(el);
     });
   }, { threshold: 0.5 });
+
   counters.forEach(el => countObserver.observe(el));
 
 });
