@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allison Johnson — Sober Coach</title>
+  <meta name="description" content="Allison Johnson is a certified sober coach helping individuals find clarity, strength, and lasting sobriety.">
+  <link rel="stylesheet" href="Sober_Coach.css">
+
+  <!-- Inline reveal styles so they apply before JS loads -->
+  <style>
+    [data-reveal] {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    [data-reveal].is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    [data-reveal="fade"] {
+      transform: none;
+      transition: opacity 0.7s ease;
+    }
+    .nav__links a.active {
+      color: var(--coral);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">Allison <span>Johnson</span></a>
+      <ul class="nav__links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#approach">My Approach</a></li>
+        <li><a href="#testimonials">Stories</a></li>
+      </ul>
+      <a href="#contact" class="nav__cta">Book a Call</a>
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero" aria-label="Hero">
+
+    <div class="hero__dark">
+      <div class="hero__dark-content">
+        <p class="eyebrow">Certified Sober Coach</p>
+        <h1 class="display-xl">You don't have<br><em>to do this alone.</em></h1>
+        <p>Recovery is not a straight line — it's a deeply personal journey. I'm here to walk alongside you, every step of the way.</p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn-primary">Start Your Journey</a>
+          <a href="#about" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__light">
+      <img
+        src="ivan-lapyrin-gT0Y5fZdXmE-unsplash.jpg"
+        alt="Allison Johnson, Sober Coach"
+        class="hero__light-img"
+      >
+      <div class="hero__light-badge">
+        <strong>Allison Johnson</strong>
+        <span>Certified Recovery Coach · 10+ Years Experience</span>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================================
+       STATS BAND
+       ============================================================ -->
+  <div class="intro-band" aria-label="Impact statistics">
+    <div class="container intro-band__inner">
+      <div class="intro-band__stat">
+        <div class="number" data-count="500" data-suffix="+">0</div>
+        <div class="label">Clients Supported</div>
+      </div>
+      <div class="intro-band__divider" aria-hidden="true"></div>
+      <div class="intro-band__stat">
+        <div class="number" data-count="10" data-suffix="+ Yrs">0</div>
+        <div class="label">In Recovery</div>
+      </div>
+      <div class="intro-band__divider" aria-hidden="true"></div>
+      <div class="intro-band__stat">
+        <div class="number" data-count="94" data-suffix="%">0</div>
+        <div class="label">Client Satisfaction</div>
+      </div>
+      <div class="intro-band__divider" aria-hidden="true"></div>
+      <div class="intro-band__stat">
+        <div class="number" data-count="3" data-suffix=" States">0</div>
+        <div class="label">Licensed Practice</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       ABOUT
+       ============================================================ -->
+  <section class="about" id="about" aria-label="About Allison">
+    <div class="container about__grid">
+
+      <div class="about__img-wrap" data-reveal="fade">
+        <img
+          src="ivan-lapyrin-gT0Y5fZdXmE-unsplash.jpg"
+          alt="Allison Johnson"
+          class="about__img"
+        >
+      </div>
+
+      <div class="about__text">
+        <p class="eyebrow" data-reveal data-delay="0">My Story</p>
+        <h2 class="display-lg" data-reveal data-delay="80">A coach who has<br>lived this journey.</h2>
+        <p data-reveal data-delay="160">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <p data-reveal data-delay="220">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+        <div class="about__credentials" data-reveal data-delay="300">
+          <div class="about__credential">Certified Addiction Recovery Coach (CARC)</div>
+          <div class="about__credential">International Coaching Federation Member</div>
+          <div class="about__credential">10+ years personal sobriety</div>
+          <div class="about__credential">Masters in Counseling Psychology</div>
+        </div>
+        <div style="margin-top: 2rem;" data-reveal data-delay="380">
+          <a href="#contact" class="btn btn-teal">Work With Me</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SERVICES
+       ============================================================ -->
+  <section class="services" id="services" aria-label="Services">
+    <div class="container">
+
+      <div class="services__header">
+        <p class="eyebrow" data-reveal>What I Offer</p>
+        <h2 class="display-md" data-reveal data-delay="80">Support built around<br>your life.</h2>
+        <p data-reveal data-delay="160">Every path to sobriety is different. My services meet you where you are, with the depth you need.</p>
+      </div>
+
+      <div class="services__grid">
+
+        <div class="service-card" data-reveal data-delay="0">
+          <div class="service-card__icon" aria-hidden="true">
+            <!-- Person icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <h3>1-on-1 Coaching</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+
+        <div class="service-card" data-reveal data-delay="120">
+          <div class="service-card__icon" aria-hidden="true">
+            <!-- Phone/video icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2"/>
+              <path d="M16 3l-4 4-4-4"/>
+            </svg>
+          </div>
+          <h3>Virtual Sessions</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+        </div>
+
+        <div class="service-card" data-reveal data-delay="240">
+          <div class="service-card__icon" aria-hidden="true">
+            <!-- Heart icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
+          <h3>Family Support</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+        </div>
+
+        <div class="service-card" data-reveal data-delay="80">
+          <div class="service-card__icon" aria-hidden="true">
+            <!-- Moon icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </div>
+          <h3>Crisis Support</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+        </div>
+
+        <div class="service-card" data-reveal data-delay="200">
+          <div class="service-card__icon" aria-hidden="true">
+            <!-- Book icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+          </div>
+          <h3>Recovery Planning</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+        </div>
+
+        <div class="service-card" data-reveal data-delay="320">
+          <div class="service-card__icon" aria-hidden="true">
+            <!-- Users icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3>Group Workshops</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       APPROACH / PHILOSOPHY
+       ============================================================ -->
+  <section class="approach" id="approach" aria-label="My approach">
+    <div class="container approach__inner">
+
+      <div class="approach__left">
+        <p class="eyebrow" data-reveal>How I Work</p>
+        <h2 class="display-lg" data-reveal data-delay="80">A method rooted<br>in lived experience.</h2>
+        <p data-reveal data-delay="160">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p data-reveal data-delay="220">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div data-reveal data-delay="300">
+          <a href="#contact" class="btn btn-primary" style="margin-top: 1rem;">Schedule a Free Consult</a>
+        </div>
+      </div>
+
+      <div class="approach__pillars">
+        <div class="pillar" data-reveal data-delay="0">
+          <span class="pillar__num" aria-hidden="true">01</span>
+          <div>
+            <h4>Radical Honesty</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+          </div>
+        </div>
+        <div class="pillar" data-reveal data-delay="120">
+          <span class="pillar__num" aria-hidden="true">02</span>
+          <div>
+            <h4>Deep Accountability</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+          </div>
+        </div>
+        <div class="pillar" data-reveal data-delay="240">
+          <span class="pillar__num" aria-hidden="true">03</span>
+          <div>
+            <h4>Compassionate Guidance</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+          </div>
+        </div>
+        <div class="pillar" data-reveal data-delay="360">
+          <span class="pillar__num" aria-hidden="true">04</span>
+          <div>
+            <h4>Long-term Vision</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       TESTIMONIALS
+       ============================================================ -->
+  <section class="testimonials" id="testimonials" aria-label="Client stories">
+    <div class="container">
+
+      <div class="testimonials__header">
+        <p class="eyebrow" data-reveal>Client Stories</p>
+        <h2 class="display-md" data-reveal data-delay="80">Real people. Real change.</h2>
+      </div>
+
+      <div class="testimonials__grid">
+
+        <div class="testimonial-card" data-reveal data-delay="0">
+          <p class="testimonial-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">MR</div>
+            <div>
+              <div class="testimonial-card__name">Michael R.</div>
+              <div class="testimonial-card__detail">3 years sober</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-reveal data-delay="120">
+          <p class="testimonial-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">SK</div>
+            <div>
+              <div class="testimonial-card__name">Sarah K.</div>
+              <div class="testimonial-card__detail">18 months sober</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-reveal data-delay="240">
+          <p class="testimonial-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">JT</div>
+            <div>
+              <div class="testimonial-card__name">James T.</div>
+              <div class="testimonial-card__detail">5 years sober</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CTA
+       ============================================================ -->
+  <section class="cta-section" id="contact" aria-label="Get in touch">
+    <div class="container cta-section__inner">
+      <p class="eyebrow" data-reveal="fade">Take the first step</p>
+      <h2 class="display-lg" data-reveal data-delay="80">Your new life<br>starts with one call.</h2>
+      <p data-reveal data-delay="160">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      <div class="cta-section__actions" data-reveal data-delay="240">
+        <a href="tel:+15550001234" class="btn btn-white">Call (555) 000-1234</a>
+        <a href="mailto:hello@allisonjohnsoncoach.com" class="btn btn-outline">Send an Email</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="#" class="nav__logo">Allison <span>Johnson</span></a>
+          <p>Certified Sober Coach helping individuals and families navigate the road to lasting recovery.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">1-on-1 Coaching</a></li>
+            <li><a href="#services">Virtual Sessions</a></li>
+            <li><a href="#services">Family Support</a></li>
+            <li><a href="#services">Group Workshops</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#about">About Allison</a></li>
+            <li><a href="#approach">My Approach</a></li>
+            <li><a href="#testimonials">Client Stories</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__contact">
+          <h4>Contact</h4>
+          <div>
+            <strong>Phone</strong>
+            <p>(555) 000-1234</p>
+            <strong>Email</strong>
+            <p>hello@allisonjohnsoncoach.com</p>
+            <strong>Location</strong>
+            <p>Available nationwide via telehealth</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Allison Johnson Coaching. All rights reserved.</p>
+        <div style="display:flex;gap:1.5rem;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Sober_Coach.js"></script>
+</body>
+</html>
